@@ -1,0 +1,2 @@
+filename,floor,otsu_threshold,final_threshold,center_blue_ratio,area_px,area_pct,mean_blue_ratio,integrated_blue_ratio,num_regions
+sample_original.png,P90,0.0000,0.5744,0.5442,52008,29.52,0.6756,37636.9,24
