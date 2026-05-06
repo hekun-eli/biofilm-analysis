@@ -109,23 +109,19 @@ output_directory/
 
 ## 📊 Sample Data
 
-The `sample_data/` folder contains a before/after pair:
+![Biofilm detection preview](sample_data/preview.jpg)
 
-| File | Description |
-|------|-------------|
-| `sample_original.png` | Original well image (crystal violet staining) |
-| `sample_annotated.png` | Same well with red contours showing detected biofilm |
+*从左到右：阴性对照（空白孔）、原始染色图像、算法自动标注结果*
 
-Run the analysis on the sample to verify the setup:
+The `sample_data/` folder contains the composite preview image above.
+For your own analysis, provide the blank control and sample images via `--blank` and `--data_dir`.
 
 ```bash
 python3 biofilm_analysis.py \
-    --data_dir ./sample_data \
+    --data_dir ./your_images \
     --blank blank_control.png \
-    --output ./sample_output
+    --output ./results
 ```
-
-> **Note:** You'll need to provide your own blank control image (filename defaults to `34.png` but can be set with `--blank`).
 
 ## 📋 Tuning Guide
 
